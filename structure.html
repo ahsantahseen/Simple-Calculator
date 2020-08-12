@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="./styling.css">
+    
 </head>
-    <body >
+    <body>
+        
+    <script type="text/javascript" src="./functionality.js"></script> 
     <h1 ><b>Online Calculator</b></h1>
     <h2 >INSERT VALUES FOR CALCULATION AND SELECT OPERATOR</h2>
     
     <div >
 
         <h3 >FIRST NUMBER:</h3>
-        <input type="text"  placeholder="input any number"></input>
+        <input id="value1" type="text"  placeholder="input any number"></input>
         <h3 >SECOND NUMBER:</h3>
-        <input type="text"  placeholder="input any number"></input>
+        <input id="value2" type="text"  placeholder="input any number"></input>
         <h3 >SELECT YOUR OPERATOR:</h3>
         <select >
-            <option value="" selected disabled hidden>Choose here</option>
+            <option id = "operator" value="" selected disabled hidden>Choose here</option>
             <option  value="a" aria-colspan="90">Addition</option>
             <option  value="b" aria-colspan="90">Subraction</option>
             <option  value="c" aria-colspan="90">Multiplication</option>
@@ -27,13 +30,13 @@
             
         </select>
         <h3 >POWER NUMBER:(if using power function)</h3>
-        <input type="text"  placeholder="power for values"></input>
+        <input type="text" id="power_value" placeholder="power for values"></input>
         <br>
         <h3 >SUBMIT YOUR VALUES</h3>
         <button  onclick="result()">CALCULATE</button>
         <br>
         <h3>RESULT WILL APPEAR HERE</h3>
-        <input type="text"  placeholder="result" readonly>
+        <input id="res" type="text"  placeholder="result" readonly>
 
 
 
@@ -42,8 +45,6 @@
 
     </div>
 
-    <script src="./functionality.js"></script>
-    <div class="footer">
-        Made By Muhammad Ahsan</div>
+       
 </body>
 </html>

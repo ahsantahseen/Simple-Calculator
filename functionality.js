@@ -8,6 +8,7 @@ function result() {
   if (z == "a") {
     c = +x + +y;
     res.value = c;
+    console.log(res.value);
   } else if (z == "b") {
     c = +x - +y;
     res.value = c;
